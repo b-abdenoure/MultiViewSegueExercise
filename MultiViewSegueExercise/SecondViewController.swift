@@ -14,11 +14,14 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var mainLabel: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mainLabel.text = "Congratulation, \(name), you've earned \(score) points!"
     }
-    
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

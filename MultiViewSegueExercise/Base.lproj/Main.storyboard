@@ -80,7 +80,7 @@
                     </view>
                     <connections>
                         <outlet property="textField" destination="p7N-Ql-KBk" id="AaP-LB-ECr"/>
-                        <segue destination="r4H-gz-nit" kind="show" identifier="secondView" id="qbx-yO-xjC"/>
+                        <segue destination="r4H-gz-nit" kind="presentation" identifier="secondView" modalPresentationStyle="fullScreen" id="qbx-yO-xjC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -92,7 +92,7 @@
             <objects>
                 <viewController id="r4H-gz-nit" customClass="SecondViewController" customModule="MultiViewSegueExercise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EbS-vo-Jdb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulation, name, you earned ___ points!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QLq-Hy-w6B">
@@ -102,6 +102,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7e-t4-VUp">
+                                <rect key="frame" x="180" y="513" width="55" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="r4H-gz-nit" eventType="touchUpInside" id="Glg-hy-uvV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zGK-U3-fj3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
